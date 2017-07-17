@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Показания счётчиков</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div style="width: 400px; margin: auto; margin-top: 50px;">
+      <p style="font-size:14px;">Показания на {{.Date}}:</p>
+      <table class="tbl">
+        <thead>
+          <tr>
+            <th>Счётчик</th><th>Значение</th><th>Тариф</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Электричество</td><td>{{.El}}</td><td>5.38</td>
+          </tr>
+          <tr>
+            <td>Горячая вода</td><td>{{.Hot}}</td><td>163.24</td>
+          </tr>
+          <tr>
+            <td>Холодная вода</td><td>{{.Cold}}</td><td>33.03</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
